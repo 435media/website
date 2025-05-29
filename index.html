@@ -760,6 +760,14 @@ hr.style1:before {
 	position: relative;
 }
 
+#container03 {
+  margin-top: 2rem; /* Add this line */
+}
+
+#divider01 {
+  margin-bottom: 2rem !important; /* Add this line */
+}
+
 .container>.wrapper {
 	vertical-align: top;
 	position: relative;
@@ -1040,196 +1048,19 @@ hr.style1:before {
 	border-bottom-right-radius: inherit;
 }
 
-#video14 {
-	text-align: center;
-}
-
-#video14 video {
-	width: 32.75rem;
-}
-
-#video14 .frame {
-	width: 32.75rem;
-}
-
-#video14 .frame:before {
-	padding-top: 56.25%;
-}
-
 #video01 {
-	text-align: center;
-}
-
-#video01 video {
-	width: 32.75rem;
+  text-align: center;
 }
 
 #video01 .frame {
-	width: 32.75rem;
+  width: 32.75rem; 
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #video01 .frame:before {
-	padding-top: 56.25%;
-}
-
-#video02 {
-	text-align: center;
-}
-
-#video02 video {
-	width: 32.75rem;
-}
-
-#video02 .frame {
-	width: 32.75rem;
-}
-
-#video02 .frame:before {
-	padding-top: 56.25%;
-}
-
-#video05 {
-	text-align: center;
-}
-
-#video05 video {
-	width: 14rem;
-}
-
-#video05 .frame {
-	width: 14rem;
-}
-
-#video06 {
-	text-align: left;
-}
-
-#video06 video {
-	width: 14rem;
-}
-
-#video06 .frame {
-	width: 14rem;
-}
-
-#video08 {
-	text-align: center;
-}
-
-#video08 video {
-	width: 32.75rem;
-}
-
-#video08 .frame {
-	width: 32.75rem;
-}
-
-#video07 {
-	text-align: center;
-}
-
-#video07 video {
-	width: 32.75rem;
-}
-
-#video07 .frame {
-	width: 32.75rem;
-}
-
-#video10 {
-	text-align: center;
-}
-
-#video10 video {
-	width: 26.875rem;
-}
-
-#video10 .frame {
-	width: 26.875rem;
-}
-
-#video11 {
-	text-align: center;
-}
-
-#video11 video {
-	width: 26.875rem;
-}
-
-#video11 .frame {
-	width: 26.875rem;
-}
-
-#video12 {
-	text-align: center;
-}
-
-#video12 video {
-	width: 26.875rem;
-}
-
-#video12 .frame {
-	width: 26.875rem;
-}
-
-#video13 {
-	text-align: center;
-}
-
-#video13 video {
-	width: 26.875rem;
-}
-
-#video13 .frame {
-	width: 26.875rem;
-}
-
-#video03 {
-	text-align: center;
-}
-
-#video03 video {
-	width: 32.75rem;
-}
-
-#video03 .frame {
-	width: 32.75rem;
-}
-
-#video03 .frame:before {
-	padding-top: 56.25%;
-}
-
-#video15 {
-	text-align: center;
-}
-
-#video15 video {
-	width: 32.75rem;
-}
-
-#video15 .frame {
-	width: 32.75rem;
-}
-
-#video15 .frame:before {
-	padding-top: 56.25%;
-}
-
-#video04 {
-	text-align: center;
-}
-
-#video04 video {
-	width: 32.75rem;
-}
-
-#video04 .frame {
-	width: 32.75rem;
-}
-
-#video04 .frame:before {
-	padding-top: 56.25%;
+  padding-top: 56.25%;
 }
 
 .gallery .inner {
@@ -1872,6 +1703,40 @@ hr.style1:before {
   <style>
   body {overflow: auto !important;}#main {opacity: 1.0 !important;transform: none !important;transition: none !important;filter: none !important;}#main > .inner > * {opacity: 1.0 !important;transform: none !important;transition: none !important;filter: none !important;}
   </style></noscript>
+
+<style>
+.longform-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.longform-video-section {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 2rem 1rem; /* Added more bottom padding */
+}
+
+.longform-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.longform-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+</style>
+
 </head>
 <body class="is-loading">
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1913,6 +1778,25 @@ hr.style1:before {
         "style2 container columns full screen">
         
       </div>
+
+        <hr id="divider12" class="style1">
+        <p id="text02" class="style3">Long Form Work</p>
+        <div id="container04" class=
+        "style2 container columns full screen">
+          <div>
+            <div class="inner">
+              <div>
+                <div id="video01" class="video">
+                  <div class="frame">
+                    <iframe src=
+                    "https://www.youtube-nocookie.com/embed/VLstk655HUI?autoplay=0&rel=0&loop=0&controls=1&cc_load_policy=0"
+                    allowfullscreen="1"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <hr id="divider11" class="style1">
         <p id="text01" class="style3">Short Form Work</p>
@@ -1966,19 +1850,19 @@ hr.style1:before {
               <li>
                 <span class="frame"><img src=
                 "assets/images/hoodhoodgolf.png?v=d2984f3d"
-                alt="HoodHood Golf 136k Followers"></span>
+                alt="HoodHood Golf 175k Followers"></span>
                 <div class="caption">
                   <p><strong>HoodHood Golf</strong><br>
-                  136k Followers</p>
+                  175k Followers</p>
                 </div>
               </li>
               <li>
                 <span class="frame"><img src=
                 "assets/images/mattshields.png"
-                alt="Matt Shields 53k Subscribers"></span>
+                alt="Matt Shields 58k Subscribers"></span>
                 <div class="caption">
                   <p><strong>Matt Shields</strong><br>
-                  53k Subscribers</p>
+                  58k Subscribers</p>
                 </div>
               </li>
               <li>
@@ -2034,7 +1918,7 @@ hr.style1:before {
               Us?</p>
               <ul id="buttons03" class="style1 buttons">
                 <li>
-                  <a href="https://x.com/tomelixir" target="_self" rel="noopener noreferrer" class=
+                  <a href="https://x.com/elixrxyz" target="_blank" rel="noopener noreferrer" class=
                   "button n01"><svg aria-labelledby="icon-title">
                   <title id="icon-title">Email</title>
                   <use xlink:href=
