@@ -1242,9 +1242,10 @@ hr.style1:before {
 }
 
 @media (max-width: 736px) {
-	html {
-		font-size: 11pt;
-	}
+    body::after,
+    body::before {
+        display: none !important;
+    }
 
 	#main>.inner {
 		--padding-horizontal: 1.5rem;
