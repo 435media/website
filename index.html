@@ -1,6 +1,12 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="435 Media">
+  <meta name="keywords" content="video editing, content creation, YouTube editors, TikTok editors, content creators portfolio, 435 Media editing services">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:site" content="@elixrxyz">
+
   <title>435 Media</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -17,7 +23,7 @@
   <meta property="og:url" content="https://435media.xyz">
   <meta property="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://435media.xyz"/>
-  <link href="https://fonts.googleapis.com/css2?display=swap&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700" rel="stylesheet" type="text/css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?display=swap&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700"></noscript>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" href=
   "assets/images/apple-touch-icon.png?v=d2984f3d">
@@ -349,7 +355,7 @@ deferred-script {
 #main>.inner>* {
 	margin-top: var(--spacing);
 	margin-bottom: var(--spacing);
-	transition: opacity 0.125s ease-in-out 0s;
+	transition: opacity 0.4s ease-in-out;
 }
 
 #main>.inner> :first-child {
@@ -949,6 +955,10 @@ hr.style1:before {
 	--indent-right: 1;
 }
 
+#container04 {
+    margin-bottom: 0.75rem;
+}
+
 #container01>.wrapper>.inner> :nth-child(1) {
 	width: calc(25% + (var(--gutters) / 4));
 }
@@ -1048,19 +1058,38 @@ hr.style1:before {
 	border-bottom-right-radius: inherit;
 }
 
-#video01 {
-  text-align: center;
+#divider01 { margin-bottom: 2rem !important; /* Add this line */ } #divider11 { margin-top: 2rem !important; }
+
+#video03 {
+	text-align: center;
 }
 
-#video01 .frame {
-  width: 32.75rem; 
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+#video03 video {
+	width: 32.75rem;
 }
 
-#video01 .frame:before {
-  padding-top: 56.25%;
+#video03 .frame {
+	width: 32.75rem;
+}
+
+#video03 .frame:before {
+	padding-top: 56.25%;
+}
+
+#video15 {
+	text-align: center;
+}
+
+#video15 video {
+	width: 32.75rem;
+}
+
+#video15 .frame {
+	width: 32.75rem;
+}
+
+#video15 .frame:before {
+	padding-top: 56.25%;
 }
 
 .gallery .inner {
@@ -1439,6 +1468,10 @@ hr.style1:before {
 		width: 100% !important;
 	}
 
+	#container04 {
+    margin-bottom: 0.75rem;
+	}	
+
 	#container04>.wrapper>.inner> :nth-child(2) {
 		--alignment: center;
 		--flex-alignment: center;
@@ -1500,19 +1533,19 @@ hr.style1:before {
 		width: 32.75rem;
 	}
 
-	#video01 video {
+	#video03 video {
 		width: 32.75rem;
 	}
 
-	#video01 .frame {
+	#video03 .frame {
 		width: 32.75rem;
 	}
 
-	#video02 video {
+	#video15 video {
 		width: 32.75rem;
 	}
 
-	#video02 .frame {
+	#video15 .frame {
 		width: 32.75rem;
 	}
 
@@ -1781,17 +1814,20 @@ hr.style1:before {
 
         <hr id="divider12" class="style1">
         <p id="text02" class="style3">Long Form Work</p>
-        <div id="container04" class=
-        "style2 container columns full screen">
-          <div>
+        <div id="container04" class="style2 container columns full screen">
+          <div class="wrapper">
             <div class="inner">
               <div>
-                <div id="video01" class="video">
-                  <div class="frame">
-                    <iframe src=
-                    "https://www.youtube-nocookie.com/embed/VLstk655HUI?autoplay=0&rel=0&loop=0&controls=1&cc_load_policy=0"
+                <div id="video03" class="video">
+                  <div class="frame"> <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/VLstk655HUI?autoplay=0&rel=0&loop=0&controls=1&cc_load_policy=0"
                     allowfullscreen="1"></iframe>
                   </div>
+                </div>
+              </div>
+              <div>
+                <div id="video15" class="video">
+                  <div class="frame"><iframe src="https://player.vimeo.com/video/1089418570?h=5b8b74c70b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Going Up ✨ (Fortnite Montage)"></iframe>
+					</div>
                 </div>
               </div>
             </div>
@@ -1806,7 +1842,7 @@ hr.style1:before {
             <div class="inner">
               <div>
                 <div id="1" class="video">
-                  <video src="assets/videos/1.mp4?v=d2984f3d"
+                  <video loading="lazy" src="assets/videos/1.mp4?v=d2984f3d"
                   poster="assets/videos/1.mp4.png?v=d2984f3d"
                   preload="auto" playsinline webkit-playsinline=""
                   loop="" controls=""></video>
@@ -1814,7 +1850,7 @@ hr.style1:before {
               </div>
               <div>
                 <div id="2" class="video">
-                  <video src="assets/videos/2.mp4?v=d2984f3d"
+                  <video loading="lazy" src="assets/videos/2.mp4?v=d2984f3d"
                   poster="assets/videos/2.mp4.png?v=d2984f3d"
                   preload="auto" playsinline webkit-playsinline=""
                   loop="" controls=""></video>
@@ -1822,7 +1858,7 @@ hr.style1:before {
               </div>
               <div>
                 <div id="3" class="video">
-                  <video src="assets/videos/3.mp4?v=d2984f3d"
+                  <video loading="lazy" src="assets/videos/3.mp4?v=d2984f3d"
                   poster="assets/videos/3.mp4.jpg?v=d2984f3d"
                   preload="auto" playsinline webkit-playsinline=""
                   loop="" controls=""></video>
@@ -1830,7 +1866,7 @@ hr.style1:before {
               </div>
               <div>
                 <div id="4" class="video">
-                  <video src="assets/videos/randomblock.mp4?v=d2984f3d"
+                  <video loading="lazy" src="assets/videos/randomblock.mp4?v=d2984f3d"
                   poster="assets/videos/randomblock.mp4.jpg?v=d2984f3d"
                   preload="auto" playsinline webkit-playsinline=""
                   loop="" controls=""></video>
@@ -1848,7 +1884,7 @@ hr.style1:before {
           <div class="inner">
             <ul>
               <li>
-                <span class="frame"><img src=
+                <span class="frame"><img loading="lazy" src=
                 "assets/images/hoodhoodgolf.png?v=d2984f3d"
                 alt="HoodHood Golf 175k Followers"></span>
                 <div class="caption">
@@ -1857,7 +1893,7 @@ hr.style1:before {
                 </div>
               </li>
               <li>
-                <span class="frame"><img src=
+                <span class="frame"><img loading="lazy" src=
                 "assets/images/mattshields.png"
                 alt="Matt Shields 58k Subscribers"></span>
                 <div class="caption">
@@ -1866,7 +1902,7 @@ hr.style1:before {
                 </div>
               </li>
               <li>
-                <span class="frame"><img src=
+                <span class="frame"><img loading="lazy" src=
                 "assets/images/sodax.png?v=d2984f3d"
                 alt="Sodax 13k Subscribers"></span>
                 <div class="caption">
@@ -1887,16 +1923,16 @@ hr.style1:before {
               <div id="gallery02" class="gallery">
                 <div class="inner">
                   <ul>
-                    <li><span class="frame"><img src=
+                    <li><span class="frame"><img loading="lazy" src=
                     "assets/images/100k.png?v=d2984f3d"
                     alt="HoodHood Golf Response"></span></li>
-                    <li><span class="frame"><img src=
+                    <li><span class="frame"><img loading="lazy" src=
                     "assets/images/marcus.png?v=d2984f3d"
                     alt="Marcus Response"></span></li>
-                    <li><span class="frame"><img src=
+                    <li><span class="frame"><img loading="lazy" src=
                     "assets/images/joemsg.png?v=d2984f3d"
                     alt="XenHexy Response"></span></li>
-                    <li><span class="frame"><img src=
+                    <li><span class="frame"><img loading="lazy" src=
                     "assets/images/sodaxmessage.png?v=d2984f3d"
                     alt="Sodax Response"></span></li>
                   </ul>
@@ -2262,6 +2298,6 @@ hr.style1:before {
   </script>
 <!-- 100% privacy-first analytics -->
 <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+<noscript><img loading="lazy" src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 </body>
 </html>
