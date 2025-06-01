@@ -1242,19 +1242,32 @@ hr.style1:before {
 }
 
 @media (max-width: 736px) {
-    body::after,
-    body::before {
-        display: none !important;
+	html {
+		font-size: 11pt;
+	}
+
+    /* Reset position and height for the dynamically inserted pseudo-elements */
+    body::after {
+        position: static !important; /* Or relative, to remove fixed behavior */
+        height: 0 !important; /* Collapse its height if it's just meant to be a hidden placeholder */
+        background: transparent !important; /* Ensure no background is visible */
     }
 
-@media (max-width: 736px) {
-    /* ... existing mobile styles ... */
-
-    body::after,
-    body::before {
-        display: none !important;
+    /* Apply similar fix for the iOS specific pseudo-element if applicable */
+    body.ios-focus-fix::before {
+        position: static !important; /* Or relative, to remove fixed behavior */
+        height: 0 !important; /* Collapse its height if it's just meant to be a hidden placeholder */
+        background: transparent !important; /* Ensure no background is visible */
     }
-}
+
+    /* Important: Do NOT hide body::before entirely, as it's your background */
+    /* If body::before is accidentally appearing as a footer, it's likely due to positioning.
+       We can reset its bottom or height if it's causing the issue, rather than hiding it. */
+    body::before {
+        /* Ensure it covers the full viewport without extending */
+        bottom: 0 !important;
+        height: var(--background-height) !important; /* Keep its intended height */
+    }
 
 	#main>.inner {
 		--padding-horizontal: 1.5rem;
