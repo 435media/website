@@ -1247,6 +1247,15 @@ hr.style1:before {
         display: none !important;
     }
 
+@media (max-width: 736px) {
+    /* ... existing mobile styles ... */
+
+    body::after,
+    body::before {
+        display: none !important;
+    }
+}
+
 	#main>.inner {
 		--padding-horizontal: 1.5rem;
 		--padding-vertical: 0rem;
